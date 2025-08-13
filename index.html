@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orb Collector: Professional Game Development Workflow</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <div class="floating-particles"></div>
+    <div class="keynote-bg-animation">
+        <div class="bg-shape" style="width: 200px; height: 200px; top: 10%; left: 10%;"></div>
+        <div class="bg-shape" style="width: 150px; height: 150px; top: 70%; right: 15%; animation-delay: -5s;"></div>
+        <div class="bg-shape" style="width: 100px; height: 100px; top: 30%; right: 30%; animation-delay: -10s;"></div>
+    </div>
+
+    <div class="progress-bar" id="progressBar"></div>
+    <div class="slide-counter" id="slideCounter">1 / 17</div>
+    
+    <div class="keynote-container">
+        <!-- Slide 1: Title -->
+        <div class="slide active title-slide">
+            <div class="central-visual">
+                <h1>🎮 Orb Collector</h1>
+                <h3>Professional Game Development Workflow</h3>
+                <h3>🔧 Engine-Agnostic Principles</h3>
+                <div class="game-preview">
+                    <div style="display: flex; align-items: center; gap: 20px;">
+                        <div class="player-character"></div>
+                        <div class="orb-animation"></div>
+                        <div class="orb-animation" style="animation-delay: 0.5s;"></div>
+                        <div class="orb-animation" style="animation-delay: 1s;"></div>
+                    </div>
+                </div>
+                <div class="speaker">Speaker: Sreyeesh Garimella</div>
+            </div>
+            <div class="speaker-notes">
+                Welcome everyone! Today we'll explore professional workflow through a simple game example.
+            </div>
+        </div>
+
+        <!-- Slide 2: What is Workflow? -->
+        <div class="slide">
+            <h2>🔄 What is Workflow?</h2>
+            <div class="central-visual">
+                <div class="workflow-diagram">
+                    <div class="workflow-step">
+                        <div class="step-icon">💡</div>
+                        <div class="step-text">Idea</div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-icon">📋</div>
+                        <div class="step-text">Plan</div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-icon">🔨</div>
+                        <div class="step-text">Build</div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-icon">🚀</div>
+                        <div class="step-text">Ship</div>
+                    </div>
+                </div>
+                <div style="font-size: 1.5em; text-align: center; margin-top: 2em; color: #00f5ff;">
+                    The invisible architecture that carries you from concept to completion
+                </div>
+            </div>
+            <div class="speaker-notes">
+                Workflow isn't just a checklist - it's the invisible structure that makes or breaks your project.
+            </div>
+        </div>
+
+        <!-- Slide 3: Why Workflow Matters -->
+        <div class="slide">
+            <h2>⚡ Why Workflow Matters</h2>
+            <div class="visual-grid">
+                <div class="visual-card">
+                    <div class="icon">🎨</div>
+                    <div class="card-title">Art</div>
+                    <div class="card-description">Visual design & assets</div>
+                </div>
+                <div class="visual-card">
+                    <div class="icon">🎮</div>
+                    <div class="card-title">Design</div>
+                    <div class="card-description">Gameplay mechanics</div>
+                </div>
+                <div class="visual-card">
+                    <div class="icon">💻</div>
+                    <div class="card-title">Programming</div>
+                    <div class="card-description">Code & systems</div>
+                </div>
+                <div class="visual-card">
+                    <div class="icon">🔊</div>
+                    <div class="card-title">Audio</div>
+                    <div class="card-description">Sound & music</div>
+                </div>
+            </div>
+            <div style="text-align: center; font-size: 1.4em; color: #00f5ff; margin-top: 2em;">
+                🔗 Everything connects. Workflow controls the complexity.
+            </div>
+            <div class="speaker-notes">
+                Game development blends multiple disciplines. Without structure, small changes cause chaos.
+            </div>
+        </div>
+
+        <!-- Slide 4: Common Pitfalls -->
+        <div class="slide">
+            <h2>⚠️ Common Pitfalls Without Workflow</h2>
+            <div class="problem-showcase">
+                <div class="problem-card">
+                    <div class="icon">📁</div>
+                    <div class="card-title">File Chaos</div>
+                    <div class="card-description">Assets scattered everywhere, duplicates, lost originals</div>
+                </div>
+                <div class="problem-card">
+                    <div class="icon">📈</div>
+                    <div class="card-title">Scope Creep</div>
+                    <div class="card-description">"Just one more feature..." until project becomes unfinishable</div>
+                </div>
+                <div class="problem-card">
+                    <div class="icon">🐛</div>
+                    <div class="card-title">Late Testing</div>
+                    <div class="card-description">Discovering broken systems when it's too late to fix</div>
+                </div>
+                <div class="problem-card">
+                    <div class="icon">🔍</div>
+                    <div class="card-title">Hidden Logic</div>
+                    <div class="card-description">Critical code buried in unexpected places</div>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                These pitfalls compound quickly. Small issues become major obstacles without proper workflow.
+            </div>
+        </div>
+
+        <!-- Slide 5: Planning -->
+        <div class="slide">
+            <h2>📋 Planning: From Idea to Core Loop</h2>
+            <div class="central-visual">
+                <div class="interactive-demo">
+                    <h3 style="color: #00f5ff; margin-bottom: 20px;">🎯 Orb Collector Core Loop</h3>
+                    <div class="workflow-diagram">
+                        <div class="workflow-step">
+                            <div class="step-icon">🏃</div>
+                            <div class="step-text">Move</div>
+                        </div>
+                        <div class="workflow-step">
+                            <div class="step-icon">⭐</div>
+                            <div class="step-text">Collect</div>
+                        </div>
+                        <div class="workflow-step">
+                            <div class="step-icon">🏆</div>
+                            <div class="step-text">Win</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="font-size: 1.3em; color: #e0e0ff; margin-top: 2em; text-align: center;">
+                    ✅ Essential Systems: Movement • Collectibles • Game State • Win Condition • UI
+                </div>
+            </div>
+            <div class="speaker-notes">
+                Simple core loop allows focus on polish rather than complexity. Identify essentials first.
+            </div>
+        </div>
+
+        <!-- Slide 6: Defining Systems -->
+        <div class="slide">
+            <h2>🏗️ Defining Systems Before You Start</h2>
+            <div class="visual-grid">
+                <div class="visual-card">
+                    <div class="icon">🏃</div>
+                    <div class="card-title">Player Movement</div>
+                    <div class="card-description">Handles movement only - not scoring</div>
+                </div>
+                <div class="visual-card">
+                    <div class="icon">⭐</div>
+                    <div class="card-title">Collectibles</div>
+                    <div class="card-description">Manages pickup behavior only</div>
+                </div>
+                <div class="visual-card">
+                    <div class="icon">🎮</div>
+                    <div class="card-title">Game Manager</div>
+                    <div class="card-description">Tracks orbs & win conditions</div>
+                </div>
+                <div class="visual-card">
+                    <div class="icon">📱</div>
+                    <div class="card-title">UI System</div>
+                    <div class="card-description">Displays info - doesn't calculate</div>
+                </div>
+            </div>
+            <div style="text-align: center; font-size: 1.4em; color: #00f5ff; margin-top: 2em;">
+                🔧 One System = One Responsibility
+            </div>
+            <div class="speaker-notes">
+                Separation of concerns makes each system easier to understand, test, and change.
+            </div>
+        </div>
+
+        <!-- Slide 7: Clean Project Setup -->
+        <div class="slide">
+            <h2>🗂️ Setting Up a Clean Project</h2>
+            <div class="central-visual">
+                <div class="code-demo">
+                    <div class="code-line">📁 <span style="color: #00f5ff;">Blueprints/</span> → Logic & Scripts</div>
+                    <div class="code-line">📁 <span style="color: #00f5ff;">Maps/</span> → Level Files</div>
+                    <div class="code-line">📁 <span style="color: #00f5ff;">Materials/</span> → Shaders & Textures</div>
+                    <div class="code-line">📁 <span style="color: #00f5ff;">UI/</span> → Interface Widgets</div>
+                    <div class="code-line">📁 <span style="color: #00f5ff;">Audio/</span> → Sounds & Music</div>
+                </div>
+                <div style="font-size: 1.4em; color: #e0e0ff; margin-top: 2em; text-align: center;">
+                    🧹 Clean workbench = Efficient building
+                </div>
+            </div>
+            <div class="speaker-notes">
+                Start with organization from day one. Every tool has its place.
+            </div>
+        </div>
+
+        <!-- Slide 8: Input Management -->
+        <div class="slide">
+            <h2>🎮 Input Management</h2>
+            <div class="central-visual">
+                <div class="interactive-demo">
+                    <h3 style="color: #00f5ff; margin-bottom: 30px;">🎯 Centralized Input Mapping</h3>
+                    <div class="demo-game-area">
+                        <div style="text-align: center;">
+                            <div style="font-size: 2em; margin-bottom: 10px;">⌨️</div>
+                            <div>Keyboard</div>
+                        </div>
+                        <div style="font-size: 3em; color: #00f5ff;">→</div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2em; margin-bottom: 10px;">🎮</div>
+                            <div>Input System</div>
+                        </div>
+                        <div style="font-size: 3em; color: #00f5ff;">→</div>
+                        <div style="text-align: center;">
+                            <div style="font-size: 2em; margin-bottom: 10px;">⚡</div>
+                            <div>Game Actions</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="font-size: 1.3em; color: #e0e0ff; margin-top: 2em; text-align: center;">
+                    ✅ One mapping = Easy platform porting
+                </div>
+            </div>
+            <div class="speaker-notes">
+                Separate input detection from gameplay logic. Makes platform adaptation much simpler.
+            </div>
+        </div>
+
+        <!-- Slide 9: Blockout Phase -->
+        <div class="slide">
+            <h2>📦 Blockout Phase: Greyboxing</h2>
+            <div class="central-visual">
+                <div class="visual-grid">
+                    <div class="visual-card">
+                        <div class="icon">⬜</div>
+                        <div class="card-title">Simple Geometry</div>
+                        <div class="card-description">Cubes, planes, cylinders</div>
+                    </div>
+                    <div class="visual-card">
+                        <div class="icon">🏃</div>
+                        <div class="card-title">Test Movement</div>
+                        <div class="card-description">Player flow & navigation</div>
+                    </div>
+                    <div class="visual-card">
+                        <div class="icon">⚡</div>
+                        <div class="card-title">Fast Iteration</div>
+                        <div class="card-description">Quick changes in minutes</div>
+                    </div>
+                    <div class="visual-card">
+                        <div class="icon">💰</div>
+                        <div class="card-title">Save Time</div>
+                        <div class="card-description">No wasted beautiful assets</div>
+                    </div>
+                </div>
+                <div style="font-size: 1.4em; color: #00f5ff; margin-top: 2em; text-align: center;">
+                    🎯 Function before beauty
+                </div>
+            </div>
+            <div class="speaker-notes">
+                Test gameplay flow with simple shapes before creating detailed assets.
+            </div>
+        </div>
+
+        <!-- Slide 10: Modular Level Design -->
+        <div class="slide">
+            <h2>🧩 Modular Level Design for Testing</h2>
+            <div class="central-visual">
+                <div class="interactive-demo">
+                    <h3 style="color: #00f5ff; margin-bottom: 30px;">🔧 Building Block Approach</h3>
+                    <div style="display: flex; justify-content: space-around; align-items: center; margin: 30px 0; flex-wrap: wrap;">
+                        <div style="text-align: center; margin: 10px;">
+                            <div style="font-size: 3em; margin-bottom: 10px;">🧱</div>
+                            <div>Platform</div>
+                        </div>
+                        <div style="font-size: 2em; color: #00f5ff;">+</div>
+                        <div style="text-align: center; margin: 10px;">
+                            <div style="font-size: 3em; margin-bottom: 10px;">📐</div>
+                            <div>Ramp</div>
+                        </div>
+                        <div style="font-size: 2em; color: #00f5ff;">+</div>
+                        <div style="text-align: center; margin: 10px;">
+                            <div style="font-size: 3em; margin-bottom: 10px;">🚧</div>
+                            <div>Obstacle</div>
+                        </div>
+                        <div style="font-size: 2em; color: #00f5ff;">=</div>
+                        <div style="text-align: center; margin: 10px;">
+                            <div style="font-size: 3em; margin-bottom: 10px;">🏗️</div>
+                            <div>Level</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="font-size: 1.3em; color: #e0e0ff; margin-top: 2em; text-align: center;">
+                    ⚡ Reusable pieces = Fast iteration + Consistent quality
+                </div>
+            </div>
+            <div class="speaker-notes">
+                Modular design enables quick testing and reuse across multiple levels.
+            </div>
+        </div>
+
+        <!-- Slide 11: Testing During Blockout -->
+        <div class="slide">
+            <h2>🧪 Testing During Blockout</h2>
+            <div class="solution-showcase">
+                <div class="solution-card">
+                    <div class="icon">🎮</div>
+                    <div class="card-title">Constant Playtesting</div>
+                    <div class="card-description">Test jump distances, sightlines, pacing</div>
+                </div>
+                <div class="solution-card">
+                    <div class="icon">👥</div>
+                    <div class="card-title">Fresh Eyes</div>
+                    <div class="card-description">Others catch problems you miss</div>
+                </div>
+                <div class="solution-card">
+                    <div class="icon">💡</div>
+                    <div class="card-title">Early Feedback</div>
+                    <div class="card-description">Find shortcuts & confusion points</div>
+                </div>
+                <div class="solution-card">
+                    <div class="icon">💰</div>
+                    <div class="card-title">Cheap Fixes</div>
+                    <div class="card-description">Changes cost minutes, not hours</div>
+                </div>
+            </div>
+            <div style="text-align: center; font-size: 1.4em; color: #00f5ff; margin-top: 2em;">
+                🔄 Test early, test often, test cheap
+            </div>
+            <div class="speaker-notes">
+                Early testing prevents expensive changes later. Fresh eyes are invaluable.
+            </div>
+        </div>
+
+        <!-- Slide 12: Centralized Game State -->
+        <div class="slide">
+            <h2>🎯 Centralized Game State</h2>
+            <div class="central-visual">
+                <div class="interactive-demo">
+                    <h3 style="color: #00f5ff; margin-bottom: 30px;">🏛️ Single Source of Truth</h3>
+                    <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
+                        <div style="text-align: center; margin: 20px;">
+                            <div style="font-size: 2.5em; margin-bottom: 10px;">⭐</div>
+                            <div>Collectible</div>
+                            <div style="font-size: 2em; margin: 10px 0; color: #00f5ff;">📤</div>
+                        </div>
+                        <div style="text-align: center; margin: 20px;">
+                            <div style="font-size: 2.5em; margin-bottom: 10px;">📱</div>
+                            <div>UI</div>
+                            <div style="font-size: 2em; margin: 10px 0; color: #00f5ff;">📥</div>
+                        </div>
+                    </div>
+                    <div style="background: rgba(0, 245, 255, 0.2); border: 2px solid #00f5ff; border-radius: 15px; padding: 20px; margin: 20px 0;">
+                        <div style="font-size: 2em; text-align: center; margin-bottom: 10px;">🎮</div>
+                        <div style="text-align: center; font-weight: bold;">GAME MANAGER</div>
+                        <div style="text-align: center; font-size: 0.9em;">Orb count • Win state • All decisions</div>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                One system knows everything. Others report to it. Eliminates guesswork and conflicts.
+            </div>
+        </div>
+
+        <!-- Slide 13: Feedback & UI -->
+        <div class="slide">
+            <h2>✨ Feedback & UI</h2>
+            <div class="central-visual">
+                <div class="visual-grid">
+                    <div class="visual-card">
+                        <div class="icon">📊</div>
+                        <div class="card-title">HUD Display</div>
+                        <div class="card-description">Real-time orb counter</div>
+                    </div>
+                    <div class="visual-card">
+                        <div class="icon">✨</div>
+                        <div class="card-title">Visual Effects</div>
+                        <div class="card-description">Sparkles on collection</div>
+                    </div>
+                    <div class="visual-card">
+                        <div class="icon">🔊</div>
+                        <div class="card-title">Audio Cues</div>
+                        <div class="card-description">Satisfying chime sounds</div>
+                    </div>
+                    <div class="visual-card">
+                        <div class="icon">🎉</div>
+                        <div class="card-title">Win Celebration</div>
+                        <div class="card-description">Victory feedback</div>
+                    </div>
+                </div>
+                <div class="game-preview" style="margin-top: 2em;">
+                    <div style="display: flex; align-items: center; justify-content: center;">
+                        <div class="player-character"></div>
+                        <div class="orb-animation" style="animation: collectOrb 2s ease-in-out infinite;"></div>
+                        <div style="font-size: 2em; margin: 0 20px; color: #00f5ff;">+1</div>
+                        <div style="font-size: 1.5em;">🎵</div>
+                    </div>
+                </div>
+            </div>
+            <div class="speaker-notes">
+                Small feedback touches make actions feel responsive and satisfying.
+            </div>
+        </div>
+
+        <!-- Slide 14: Iteration Discipline -->
+        <div class="slide">
+            <h2>🔄 Iteration Discipline</h2>
+            <div class="central-visual">
+                <div class="workflow-diagram">
+                    <div class="workflow-step" style="background: rgba(0, 255, 0, 0.2); border-color: #00ff00;">
+                        <div class="step-icon">✅</div>
+                        <div class="step-text">Always Playable</div>
+                    </div>
+                    <div class="workflow-step" style="background: rgba(255, 255, 0, 0.2); border-color: #ffff00;">
+                        <div class="step-icon">🔧</div>
+                        <div class="step-text">Add Feature</div>
+                    </div>
+                    <div class="workflow-step" style="background: rgba(255, 100, 100, 0.2); border-color: #ff6464;">
+                        <div class="step-icon">❌</div>
+                        <div class="step-text">Breaks?</div>
+                    </div>
+                    <div class="workflow-step" style="background: rgba(0, 245, 255, 0.2); border-color: #00f5ff;">
+                        <div class="step-icon">🛠️</div>
+                        <div class="step-text">Fix Immediately</div>
+                    </div>
+                </div>
+                <div style="font-size: 1.4em; color: #00f5ff; margin-top: 2em; text-align: center;">
+                    🚫 Never leave broken builds overnight
+                </div>
+            </div>
+            <div class="speaker-notes">
+                Always maintain playable state. Fix breaks immediately before moving forward.
+            </div>
+        </div>
+
+        <!-- Slide 15: Scope Management -->
+        <div class="slide">
+            <h2>🎯 Scope Management</h2>
+            <div class="central-visual">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin: 2em 0;">
+                    <div style="text-align: center;">
+                        <h3 style="color: #00ff00; margin-bottom: 20px;">✅ Core Features</h3>
+                        <div class="solution-card">
+                            <div class="icon">🏃</div>
+                            <div class="card-title">Movement</div>
+                        </div>
+                        <div class="solution-card">
+                            <div class="icon">⭐</div>
+                            <div class="card-title">Collect Orbs</div>
+                        </div>
+                        <div class="solution-card">
+                            <div class="icon">🏆</div>
+                            <div class="card-title">Win Condition</div>
+                        </div>
+                    </div>
+                    <div style="text-align: center;">
+                        <h3 style="color: #ff6464; margin-bottom: 20px;">❌ Scope Creep</h3>
+                        <div class="problem-card">
+                            <div class="icon">👹</div>
+                            <div class="card-title">Enemies</div>
+                        </div>
+                        <div class="problem-card">
+                            <div class="icon">⚡</div>
+                            <div class="card-title">Power-ups</div>
+                        </div>
+                        <div class="problem-card">
+                            <div class="icon">👥</div>
+                            <div class="card-title">Multiplayer</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="font-size: 1.4em; color: #00f5ff; text-align: center;">
+                    📏 Better to finish small than abandon large
+                </div>
+            </div>
+            <div class="speaker-notes">
+                Resist feature creep. Each addition brings complexity that can derail the project.
+            </div>
+        </div>
+
+        <!-- Slide 16: Engine Doesn't Matter -->
+        <div class="slide">
+            <h2>🔧 Engine Doesn't Matter</h2>
+            <div class="visual-grid">
+                <div class="visual-card">
+                    <div class="icon">🔷</div>
+                    <div class="card-title">Unreal Engine</div>
+                    <div class="card-description">Blueprints + C++</div>
+                </div>
+                <div class="visual-card">
+                    <div class="icon">🔶</div>
+                    <div class="card-title">Unity</div>
+                    <div class="card-description">C# + Visual Scripting</div>
+                </div>
+                <div class="visual-card">
+                    <div class="icon">🔷</div>
+                    <div class="card-title">Godot</div>
+                    <div class="card-description">GDScript + C#</div>
+                </div>
+                <div class="visual-card">
+                    <div class="icon">⚙️</div>
+                    <div class="card-title">Custom Engine</div>
+                    <div class="card-description">Your choice</div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2em;">
+                <div style="font-size: 1.5em; color: #00f5ff; margin-bottom: 1em;">🧠 Same Principles Apply</div>
+                <div style="font-size: 1.2em; color: #e0e0ff;">
+                    ✅ Organization • ✅ Modularity • ✅ Testing • ✅ Scope Control
+                </div>
+            </div>
+            <div class="speaker-notes">
+                Good workflow transcends tools. The principles work everywhere.
+            </div>
+        </div>
+
+        <!-- Slide 17: Final Takeaways -->
+        <div class="slide">
+            <h2>🎯 Final Takeaways</h2>
+            <div class="central-visual">
+                <div class="solution-showcase">
+                    <div class="solution-card">
+                        <div class="icon">🗂️</div>
+                        <div class="card-title">Organize Early</div>
+                        <div class="card-description">Structure from day one</div>
+                    </div>
+                    <div class="solution-card">
+                        <div class="icon">🧩</div>
+                        <div class="card-title">Stay Modular</div>
+                        <div class="card-description">Independent systems</div>
+                    </div>
+                    <div class="solution-card">
+                        <div class="icon">🧪</div>
+                        <div class="card-title">Test Often</div>
+                        <div class="card-description">Early and continuous</div>
+                    </div>
+                    <div class="solution-card">
+                        <div class="icon">🎯</div>
+                        <div class="card-title">Control Scope</div>
+                        <div class="card-description">Finish what you start</div>
+                    </div>
+                </div>
+                <div style="font-size: 1.8em; color: #00f5ff; text-align: center; margin: 2em 0;">
+                    🚀 Thank You!
+                </div>
+                <div style="font-size: 1.3em; color: #e0e0ff; text-align: center;">
+                    Questions & Discussion
+                </div>
+            </div>
+            <div class="speaker-notes">
+                Recap the key principles. Open floor for questions and discussion.
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <button class="nav-btn" id="prevBtn">⬅️ Previous</button>
+        <button class="nav-btn" id="toggleNotes">📝 Notes</button>
+        <button class="nav-btn" id="nextBtn">Next ➡️</button>
+    </div>
+
+    <div class="keyboard-hint">Use arrow keys • Spacebar • Press N for notes • F for fullscreen</div>
+
+    <script src="js/particles.js"></script>
+    <script src="js/keynote.js"></script>
+</body>
+</html>
